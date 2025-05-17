@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background: #f4f7fa;
+}
+
+.sidebar {
+  width: 20%;
+  background: #e6f0fa;
+  border-right: 1px solid #c3d3e7;
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.typeBtn {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #dbeafe;
+  color: #1e3a8a;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.typeBtn:disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.activeBtn {
+  composes: typeBtn;
+  background: #2563eb;
+  color: #fff;
+}
+
+.chat {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+.chatHistory {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.userMsg {
+  align-self: flex-end;
+  background: #dbeafe;
+  color: #1e3a8a;
+  padding: 10px 16px;
+  border-radius: 16px 16px 0 16px;
+  max-width: 70%;
+}
+
+.aiMsg {
+  align-self: flex-start;
+  background: #e0e7ef;
+  color: #334155;
+  padding: 10px 16px;
+  border-radius: 16px 16px 16px 0;
+  max-width: 70%;
+}
+
+.chatInputForm {
+  display: flex;
+  gap: 8px;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #c3d3e7;
+  font-size: 1rem;
+}
+
+.sendBtn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sendBtn:disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.userform {
+  width: 20%;
+  background: #e6f0fa;
+  border-left: 1px solid #c3d3e7;
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userform form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.userform input,
+.userform textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #c3d3e7;
+  font-size: 1rem;
+}
+
+.userform button {
+  padding: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.userform button:disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+} 
